@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="#ffe1ec"
+    android:layout_height="match_parent"
+    tools:context="com.mohammedabdelsattar.hnakoleh.FilterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+<ImageView
+    android:layout_width="300dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="150dp"
+    android:src="@drawable/lolog"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="اكتب عايز تاكل بفلوس قد ايه واعرف عن اكل بيتي ودليفري تكلفتهم تبدأ من 5 جنية"
+           android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etFrom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="من كام.."
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:background="#FFF"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etTo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#FFF"
+            android:gravity="center"
+            android:hint="لكام.."
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:textColor="#FFF"
+            android:background="#FF5733"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="بحث"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6631041420385537/8487612694">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
