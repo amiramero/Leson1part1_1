@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#ffe1ec"
+    android:background="@color/colorPrimaryDark"
     android:layout_height="match_parent"
     tools:context="com.mohammedabdelsattar.hnakoleh.MainActivity">
 
@@ -16,7 +16,7 @@
         android:elevation="6dp"
         app:tabTextColor="#d3d3d3"
         app:tabSelectedTextColor="#ffffff"
-        app:tabIndicatorColor="#379bbc"
+        app:tabIndicatorColor="#874504"
         android:minHeight="?attr/actionBarSize"
         />
 
@@ -49,5 +49,5 @@
             ads:adUnitId="ca-app-pub-6631041420385537/8487612694">
         </com.google.android.gms.ads.AdView>
 
-        </RelativeLayout>
+    </RelativeLayout>
 </RelativeLayout>

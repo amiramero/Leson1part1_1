@@ -8,7 +8,7 @@ public class Blog {
     public String title,desc,image;
     public double price;
     public Boolean delivery;
-
+    public int phone;
     public Boolean getDelivery() {
         return delivery;
     }
@@ -25,5 +25,12 @@ public class Blog {
         this.price = price;
         this.delivery=delivery;
     }
-
+    public Blog(String title, String desc, String image, double price,Boolean delivery,int phone) {
+        this.title = title;
+        this.desc = desc;
+        this.image = image;
+        this.price = price;
+        this.delivery=delivery;
+        this.phone=phone;
+    }
 }

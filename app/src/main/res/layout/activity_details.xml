@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#ffe1ec"
+    android:background="@color/colorPrimaryDark"
     android:layout_height="match_parent"
     tools:context="com.mohammedabdelsattar.hnakoleh.DetailsActivity">
 
-    
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            
-            
-            
+
+
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -69,9 +69,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorAccent"
+                android:background="@color/colorPrimary"
                 android:id="@+id/btnCall"
-                android:textColor="#FFF"
+                android:textColor="#c69c90"
                 android:text="Call"
                 />
 
@@ -79,7 +79,7 @@
 
 
         </LinearLayout>
-        
+
     </ScrollView>
 
     <com.google.android.gms.ads.AdView

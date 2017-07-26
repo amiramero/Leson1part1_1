@@ -96,7 +96,7 @@ public class FastFoodFragment extends Fragment {
                 {
                     blogs = postSnapshot.getValue(Blog.class);
 
-                    x=new Blog(blogs.title,blogs.desc, blogs.image,blogs.price,blogs.delivery);
+                    x=new Blog(blogs.title,blogs.desc, blogs.image,blogs.price,blogs.delivery,blogs.phone);
 
                     if(x.price >= from && x.price <= to && x.getDelivery() == true)
                         Yourlis.add(x);

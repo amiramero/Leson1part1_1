@@ -3,6 +3,7 @@ package com.mohammedabdelsattar.hnakoleh;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +54,8 @@ public class Adapter extends RecyclerView.Adapter<MainActivity.bolgviewholder> {
                 intent.putExtra("description",model.desc);
                 intent.putExtra("price",model.price);
                 intent.putExtra("imgURL",model.image);
+                intent.putExtra("phone",model.phone);
+                Log.e("p","phone "+model.phone);
                 if(model.delivery == true)
                     intent.putExtra("show",true);
 
