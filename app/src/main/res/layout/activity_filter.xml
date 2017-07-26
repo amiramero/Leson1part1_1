@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:padding="8dp"
-    android:background="#ffe1ec"
+    android:background="@color/colorPrimaryDark"
     android:layout_height="match_parent"
     tools:context="com.mohammedabdelsattar.hnakoleh.FilterActivity">
 
@@ -30,39 +30,56 @@
             android:layout_width="match_parent"
             android:text="اكتب عايز تاكل بفلوس قد ايه واعرف عن اكل بيتي ودليفري تكلفتهم تبدأ من 5 جنية"
            android:textColor="#000"
+            android:background="@drawable/border3"
             android:layout_marginTop="30dp"
             android:gravity="center_horizontal"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:layout_height="wrap_content" />
-        <EditText
-            android:id="@+id/etFrom"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:hint="من كام.."
-            android:inputType="numberDecimal"
-            android:textColor="#000"
-            android:background="#FFF"
-            android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/etTo"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:background="#FFF"
-            android:gravity="center"
-            android:hint="لكام.."
-            android:inputType="numberDecimal"
-            android:textColor="#000"
-            android:textSize="24sp" />
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etFrom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="من كام.."
+
+                android:inputType="numberDecimal"
+                android:textColor="#000"
+                android:background="@drawable/border3"
+                android:textSize="24sp" /> />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etTo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:gravity="center"
+                android:hint="لكام.."
+                android:inputType="numberDecimal"
+                android:textColor="#000"
+                android:textSize="24sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
 
         <Button
             android:id="@+id/btnSearch"
             android:layout_width="match_parent"
             android:textColor="#FFF"
-            android:background="#FF5733"
+            android:background="@drawable/border2"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:gravity="center"

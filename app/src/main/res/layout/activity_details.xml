@@ -54,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tvPlace"
                 android:layout_marginTop="10dp"
+
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 />
 
@@ -69,7 +70,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/borders"
                 android:id="@+id/btnCall"
                 android:textColor="#c69c90"
                 android:text="Call"

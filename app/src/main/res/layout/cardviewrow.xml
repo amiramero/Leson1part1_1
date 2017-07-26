@@ -25,7 +25,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-
             android:layout_weight="2.5"
             android:orientation="vertical">
 
@@ -34,26 +33,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
+                android:background="@drawable/border3"
                 android:padding="5dp" />
 
             <TextView
                 android:id="@+id/tvdesc"
                 android:layout_width="match_parent"
-                android:textSize="20sp"
-                android:maxLength="50"
                 android:layout_height="wrap_content"
-                android:padding="5dp" />
+
+                android:background="@drawable/border3"
+                android:maxLength="50"
+                android:padding="5dp"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/tvprice"
                 android:textSize="20sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/border3"
                 android:padding="5dp" />
 
             <TextView
                 android:id="@+id/tv_delivery"
                 android:visibility="gone"
+                android:background="@drawable/border3"
                 android:textSize="20sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

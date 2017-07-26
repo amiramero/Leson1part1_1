@@ -46,7 +46,7 @@ public class DetailsActivity extends AppCompatActivity {
 
         title= getIntent().getExtras().getString("title");
         description = getIntent().getExtras().getString("description");
-        p = getIntent().getExtras().getInt("phone");
+        phone = getIntent().getExtras().getString("phone");
 
         imgURL= getIntent().getExtras().getString("imgURL");
         place= getIntent().getExtras().getString("place","");
@@ -65,7 +65,7 @@ public class DetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:"+p));
+                intent.setData(Uri.parse("tel:"+phone));
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
 
